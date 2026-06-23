@@ -6,7 +6,6 @@ sentence = input("Please enter a sentence: ")
 # 2. Extract and count the occurrences of each digit
 digits = [char for char in sentence if char.isdigit()]
 counts = Counter(digits)
-counts[digits] = counts[digits]+1
 
 # Ensure all digits from 0 to 9 are accounted for (even if they appear 0 times)
 for i in range(10):
