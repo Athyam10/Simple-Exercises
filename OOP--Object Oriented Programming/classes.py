@@ -1,4 +1,4 @@
-# make a super class of mammals and two subclasses of dog and cat and at least 6 objects for each class 
+# making a super class of mammals and two subclasses of dog and cat and at least 6 objects for each class 
 class mammals:
     def __init__(self, legs, teeth):
         self.legs = legs
@@ -8,7 +8,7 @@ class mammals:
         return f"A mammal with {self.legs} legs and {self.teeth} teeth ."
 
 class dog(mammals):
-    def __init__(self, size, breed, legs=4, teeth=32):
+    def __init__(self, size, breed, legs, teeth):
         super().__init__(legs, teeth)
         self.size = size
         self.breed = breed
@@ -17,7 +17,7 @@ class dog(mammals):
         return f"A {self.size} dog of breed {self.breed} barks: Woof! and has {self.legs} legs and {self.teeth} teeth."
 
 class cat(mammals):
-    def __init__(self, size, color, legs=4, teeth=32):
+    def __init__(self, size, color, legs, teeth):
         super().__init__(legs, teeth)
         self.size = size
         self.color = color
@@ -35,10 +35,10 @@ cat2 = cat("Medium", "Gray" , legs=4, teeth=34)
 cat3 = cat("Small", "Black" , legs=4, teeth=30)
 
 # Test the speak method for each object
-print(dog1.speak())  # Output: A Large dog of breed Golden Retriever barks: Woof!
-print(dog2.speak())  # Output: A Medium dog of breed German Shepherd barks: Woof!
-print(dog3.speak())  # Output: A Small dog of breed Bulldog barks: Woof!
+print(dog1.speak())  
+print(dog2.speak())  
+print(dog3.speak())  
 
-print(cat1.speak())  # Output: A Large cat with Orange fur meows: Meow!
-print(cat2.speak())  # Output: A Medium cat with Gray fur meows: Meow!
-print(cat3.speak())  # Output: A Small cat with Black fur meows: Meow!
+print(cat1.speak())  
+print(cat2.speak())  
+print(cat3.speak())  
