@@ -4,9 +4,6 @@ class mammals:
         self.legs = legs
         self.teeth = teeth
 
-    def speak(self):
-        return f"A mammal with {self.legs} legs and {self.teeth} teeth ."
-
 class dog(mammals):
     def __init__(self, size, breed, legs, teeth):
         super().__init__(legs, teeth)
